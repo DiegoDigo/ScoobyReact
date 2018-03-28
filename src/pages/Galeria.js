@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 
-export default class Produto extends Component {
+export default class Galeria extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -11,7 +11,7 @@ export default class Produto extends Component {
 
     render() {
         return(
-        <h1>Teste tela de produto</h1>
+            <h1>Confira nosso Trabalho</h1>
         )
     }
 

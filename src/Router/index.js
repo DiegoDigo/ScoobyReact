@@ -3,7 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from '../components/header'
 
 import Home from '../pages/Home';
-import Produto from "../pages/Produto";
+import Catalogo from "../pages/Catalogo";
+import Galeria from "../pages/Galeria";
 
 
 const Router = () => (
@@ -11,7 +12,8 @@ const Router = () => (
         <div>
         <Header/>
           <Route exact path="/" component={Home} />
-          <Route path="/produtos" component={Produto} />
+          <Route path="/produtos" component={Catalogo} />
+          <Route path="/galeria" component={Galeria} />
         </div>
   </BrowserRouter>
 )
