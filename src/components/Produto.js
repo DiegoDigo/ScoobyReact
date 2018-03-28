@@ -2,15 +2,16 @@ import React from 'react';
 import './css/Produto.css';
 
 const Produto = (props) => (
-        <div class="card">
-            <div>
+        <div className="card">
+            <div className="center">
                 <img className="responsive-img card-img-prod" src={ props.produto.img } alt="Rações"/>
+                <div className="divider" />
             </div>
-            <div class="card-content">
-              <span class="card-title">{props.produto.nome}</span>
+            <div className="card-content">
+              <span className="card-title">{props.produto.nome}</span>
               <p>{ props.produto.descricao }</p>
             </div>
-            <div class="card-action center">
+            <div className="card-action center">
                 <a><i className="material-icons left">add_shopping_cart</i>Comprar</a>
             </div>
       </div>

@@ -21,7 +21,7 @@ export default class Home extends Component {
                     </div>
                     <div className="col l7 m12 s12 medium-device" id="lin">
                         <h1 id="Banho">Banho & Tosa</h1>
-                        <p>Contamos com uma equipe de profissionais qualificados para deixar o seu bichinho de estimação mais limpo, bonito e saudáve</p>
+                        <p>Contamos com uma equipe de profissionais qualificados para deixar o seu bichinho de estimação mais limpo, bonito e saudável.</p>
                         <p className="neg">Banho - Tosa Higiênica - Tosa Estética - Hidratação - Limpeza das Orelhas - Corte de Unhas</p>
                         <p className="right"><Link to="/galeria">Conheça nossa galeria</Link></p>
                     </div>
@@ -44,9 +44,10 @@ export default class Home extends Component {
                    </div>
                     <div className="col l7 m12 s12 medium-device" id="lin">
                         <h1>venda de ração</h1>
-                        <p> A ração do seu melhor amigo acabou? É só ligar que entregamos na sua casa!</p>
+                        <p> A ração do seu melhor amigo acabou ?</p>
+                        <p> compre pelo nosso site ou ligue que entregamos na sua casa !</p>
+                        <p className="right"><Link to="/produtos">conheça nossos produtos</Link></p>
                         <p className="neg">Tele Entrega</p>
-                        <p className="right"><Link to="/produtos">Conheça nossos produtos</Link></p>
                     </div>
                 </div>
              </div>
