@@ -45,7 +45,7 @@ export default class Home extends Component {
                     <div className="col l7 m12 s12 medium-device" id="lin">
                         <h1>venda de ração</h1>
                         <p> A ração do seu melhor amigo acabou ?</p>
-                        <p> compre pelo nosso site ou ligue que entregamos na sua casa !</p>
+                        <p> compre pelo nosso site ou ligue que entregamos na sua casa!</p>
                         <p className="right"><Link to="/produtos">conheça nossos produtos</Link></p>
                         <p className="neg">Tele Entrega</p>
                     </div>

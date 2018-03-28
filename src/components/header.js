@@ -9,12 +9,12 @@ const Header = () => (
                     <NavLink to="/" className="brand-logo">Scooby</NavLink>
                      <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><NavLink to="/produtos">Produtos</NavLink></li>
-                         <li><NavLink to="/galeria">Galeria</NavLink></li>
+                        <li><NavLink to="/galeria">Galeria</NavLink></li>
+                        <li><NavLink to="/Login">Login</NavLink></li>
                     </ul>
                  </div>
             </div>
          </nav>
-
 )
 
 export default Header;
