@@ -1,0 +1,44 @@
+.col s6 p{
+	color: #CCCCCC;
+	font-weight: bold;
+}
+
+.title{
+	font-family: 'Gorditas', cursive;
+}
+
+.neg {
+	font-weight: bold;
+}
+
+.text-center h2{
+	font-size: 35px;
+	font-family: 'Francois One', sans-serif;
+}
+
+#lin  h1{
+	font-family: 'Chicle', cursive;
+}
+#lin p{
+	font-size: 20px;
+	font-family: 'Buenard', serif;
+}
+
+.img {
+    padding-top: 55px;
+}
+
+@media(max-width: 761px ){
+
+	.text-center h2{
+		font-size: 30px;
+		font-family: 'Francois One', sans-serif;
+	}
+
+	#lin p{
+		font-size: 18px;
+	}
+    .medium-device{
+        text-align: center;
+    }
+}
