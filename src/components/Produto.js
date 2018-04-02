@@ -4,8 +4,8 @@ import './css/Produto.css';
 const Produto = (props) => (
         <div className="card">
             <div className="center">
-                <img className="responsive-img card-img-prod" src={ props.produto.img == null ?
-                    require('../static/img/image-not-found.png') : props.produto.img } alt="Rações"/>
+                <img className="responsive-img card-img-prod" src={ props.produto.image == null ?
+                    require('../static/img/image-not-found.png') : props.produto.image } alt="Rações"/>
             </div>
             <div className="card-content">
               <span className="card-title">{props.produto.name}</span>
