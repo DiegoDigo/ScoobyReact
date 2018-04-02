@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import api from '../services/api';
 import './css/Login.css';
 
 export default class Login extends Component {
@@ -26,31 +27,39 @@ export default class Login extends Component {
         e.preventDefault()
         const email = this.state.email;
         const pass = this.state.password;
-        console.log(email, pass)
+        this.login(email, pass)
+    }
+
+    login = async (email, password) => {
+        const login = await api.post('user/login/',{'email':email, 'password': password})
+        console.log(login)
+        if (login.ok){
+            this.props.history.push("/")
+        }
     }
 
     render() {
         return(
             <div className='form-login'>
-                 <div class="row">
+                 <div className="row">
                      <h1 className="center">Login Scooy</h1>
-                    <form class="col s12" onSubmit={ this.submit }>
-                       <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate"
+                    <form className="col s12" onSubmit={ this.submit }>
+                       <div className="row">
+                            <div className="input-field col s12">
+                                <input id="email" type="email" className="validate"
                                        value={this.state.email} onChange={this.handleChangeEmail} />
-                                <label for="email">Email</label>
+                                <label htmlFor="email">Email</label>
                             </div>
                           </div>
-                          <div class="row">
-                            <div class="input-field col s12">
+                          <div className="row">
+                            <div className="input-field col s12">
                               <input id="password" type="password"
                                      value={this.state.password} onChange={this.handleChangePass} />
-                              <label for="password">Senha</label>
+                              <label htmlFor="password">Senha</label>
                             </div>
                           </div>
-                          <div class="row">
-                              <div class="input-field col s12">
+                          <div className="row">
+                              <div className="input-field col s12">
                               <input type="submit" value="Acessar" className="btn btn-block col s12 teal"/>
                               </div>
                           </div>

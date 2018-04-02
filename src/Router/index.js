@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Header from '../components/header'
 
+
+import Header from '../components/header'
 import Home from '../pages/Home';
 import Catalogo from "../pages/Catalogo";
 import Galeria from "../pages/Galeria";
 import Login from "../pages/Login";
+
+
 
 
 const Router = () => (

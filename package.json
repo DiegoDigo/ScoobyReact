@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apisauce": "^0.14.3",
     "eslint": "^4.19.1",
     "materialize-css": "^1.0.0-beta",
     "react": "^16.2.0",
